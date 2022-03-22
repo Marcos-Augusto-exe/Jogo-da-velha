@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="./img/jogo-da-velha.png">
+    <title>Jogo da velha</title>
+</head>
+
+<body>
+    <div>
+        <img class="jdv" src="./img/jogo-da-velha.png" alt="jogo-da-velha">
+        <h1>Jogo da velha</h1>
+        <img class="jdv" src="./img/jogo-da-velha.png" alt="jogo-da-velha">
+    </div>
+
+    <div class="stage">
+        <div>
+            <div id="0" class="square">
+
+            </div>
+            <div id="1" class="square">
+
+            </div>
+            <div id="2" class="square"></div>
+        </div>
+
+        <div>
+            <div id="3" class="square"></div>
+            <div id="4" class="square"></div>
+            <div id="5" class="square"></div>
+        </div>
+
+        <div>
+            <div id="6" class="square"></div>
+            <div id="7" class="square"></div>
+            <div id="8" class="square"></div>
+        </div>
+
+
+        <button onclick="restart()">🔃</button>
+
+        <div class="jogadores">
+            <h3 id="nomePlayerUm" translate="no">Player 1</h3>
+            
+            <span class="placares"><span id="placar"></span>X<span id="placar2"></span></span>
+
+            <h3 id="nomePlayerDois" translate="no">Player 2</h3>
+            
+
+            <input id="nome" type="text" placeholder="Player 1">
+            <input id="btn" type="submit" value="Ok">
+        </div>
+
+        <!--Modal-->
+        <div id="janelaVencedor">
+
+            <p id="p" class="p">Parabéns</p>
+            <h2 id="display" translate="no"></h2>
+            <P class="p">você venceu!!</P>
+            <P class="p2"> Reiniciando o jogo...</P>
+
+        </div>
+        <div id="fundo"></div>
+
+    </div>
+
+    <script src="./JDV/game.js"></script>
+    <script src="./JDV/interface.js"></script>
+
+</body>
+
+</html>
